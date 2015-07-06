@@ -1,0 +1,21 @@
+// ESN 
+// ESN Thanks STYLES
+// PARTIALS/_thanks.SCSS
+
+.thanks_content {
+	text-align: center;
+	width: 700px;
+	margin: 35px auto;
+}
+.thanks_content .underline {
+	width: 75%;
+}
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+
+}

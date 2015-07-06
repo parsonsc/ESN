@@ -1,0 +1,35 @@
+// ESN
+// ESN HERO BANNER STYLING
+// PARTIALS/_HERO_BANNER.SCSS
+
+section.hero_banner {
+	position: relative;
+	margin-bottom: 50px;
+}
+section.hero_banner .hero_banner_content {
+	position: absolute;
+	width: 60%;
+	bottom: -50px;
+	left: 20%;
+	background: $white;
+	padding: 10px 25px;
+	border: 1px solid black;
+}
+
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+	section.hero_banner .hero_banner_content {
+		position: relative;
+		width: 96%;
+		bottom: 0;
+		left: 0;
+		padding: 10px 2%;
+		font-size: 14px;
+		border: none;
+	}
+}

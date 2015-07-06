@@ -1,0 +1,28 @@
+// ESN
+// BREADCRUMB STYLES
+// PARTIALS/BREADCRUMB.SCSS
+
+section.breadcrumb {
+	padding: 10px 0;
+	clear: both;
+}
+section.breadcrumb ul {
+	margin: 0;
+	padding: 0;
+}
+section.breadcrumb ul li {
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	font-size: 16px;	
+}
+section.breadcrumb ul li a {
+	color: $black;
+}
+section.breadcrumb ul li:first-child {
+	padding-left: 5px;
+}
+.fa-chevron-right {
+	padding: 8px 10px;
+	font-size: 10px;
+}

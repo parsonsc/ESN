@@ -1,0 +1,77 @@
+// ESN 
+// ESN SOCIAL FEED STYLES
+// PARTIALS/_SOCIAL_FEED.SCSS
+
+section.social_feed {
+
+}
+section.social_feed .feed {
+	float: left;
+	width: 30%;
+	display: block;
+	overflow: auto;
+	margin: 0 1%;
+	padding: 10px;
+	border: 1px solid $black;
+}
+section.social_feed .feed.facebook {
+	margin-left: 0;
+}
+section.social_feed .feed.contact_us {
+	margin-right: 0;
+}
+
+section.social_feed .feed header {
+	margin: 0;
+	text-align: left;
+	clear: both;
+	padding: 0 0 20px;
+	overflow: hidden;
+}
+section.social_feed .feed header h3 {
+	display: block;
+	float: left;
+	width: 75%;
+	margin: 0;
+}
+section.social_feed .feed header a {
+	width: 25%;
+	float: right;
+}
+section.social_feed .feed.contact_us ul li {
+	display: block;
+	padding: 10px 0;
+	clear: both;
+	overflow: hidden;
+}
+section.social_feed .feed.contact_us ul li i {
+	display: block;
+	font-size: 20px;
+	float: left;
+}
+section.social_feed .feed.contact_us ul li p {
+	display: block;
+	float: left;
+	clear: both;
+}
+// TABLET STYLES
+@include respond-to(tablet) {
+	section.social_feed .feed {
+		width: 26%;
+		margin: 0 2%;
+		padding: 10px 2%;
+	}
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+	section.social_feed .feed {
+		float: none;
+		width: 96%;
+		margin: 0 0 35px;
+		padding: 10px 2%;
+	}	
+	section.social_feed .feed header h3 {
+
+	}
+}

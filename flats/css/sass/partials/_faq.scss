@@ -1,0 +1,112 @@
+// ESN
+// ESN FAQ'S STYLING
+// PARTIALS/_FAQ.SCSS
+
+#faq {
+
+}
+#faq .hero_banner_content {
+	width: 70%;
+	left: 15%;
+}
+#faq .generic_content_container {
+  margin-top: 50px;	
+}
+#faq .content_copy {
+  float: left;
+}
+
+// FAQ ACCORDIAN 
+.faq_questions {
+
+}
+
+.ac-container {
+	width: 100%;
+	margin: 10px auto 30px auto;
+	text-align: left;
+}
+.ac-container div {
+	margin: 0 auto 35px;
+}
+.ac-container label{
+	padding: 5px 20px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+} 
+.ac-container label i {
+	position: absolute;
+	left: 0;
+}
+.ac-container label.active i {
+	-ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg); 
+    transform: rotate(-180deg);
+}
+.ac-container input{
+	display: none;
+}
+.ac-container article{
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.ac-container article p {
+	line-height: 23px;
+	font-size: 14px;
+	padding: 10px 20px;;
+}
+.ac-container input:checked ~ article{
+	-webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	-ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.ac-container input:checked ~ article{
+	height: auto;
+}
+
+// FAQ'S SIDEBAR
+#faq .content_sidebar {
+	background: $light_grey;
+	padding: 1%;
+	width: 26%;
+}
+#faq aside.content_sidebar form {
+	width: 100%;
+	border-bottom: 1px solid $black;
+	padding: 0 0 35px;
+	overflow: hidden;
+}
+#faq aside.content_sidebar form.cat_select label,
+#faq aside.content_sidebar form.cat_select select {
+	width: 100%;
+	clear: both;
+	display: block;
+	margin: 10px 0 0;
+}
+#faq aside.content_sidebar form.cat_select select {
+	padding: 5px 0;
+}
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+
+}

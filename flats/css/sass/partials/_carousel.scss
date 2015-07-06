@@ -1,0 +1,77 @@
+.hero {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0;
+}
+	
+.hero-carousel article {
+	width: 830px;
+	margin: 0 auto;
+	height: 415px;
+	display: block;
+	float: left;
+	position: relative;
+}
+.hero-carousel-container article {
+	float: left;
+}
+	
+.hero-carousel article img {
+	position: absolute; 
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.hero-carousel-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 0;
+	z-index: 2;
+}
+
+.hero-carousel-nav li {
+	position: absolute;
+  	bottom: 0;
+  	right: 0;
+  	list-style: none;
+  	background: rgba(153,204,51,0.8);
+  	height: 415px;
+  	width: 28.2%;
+}
+#hero .carousel-nav li.next {
+  left: auto;
+  right: 0;
+}
+
+.hero-carousel-nav li.prev {
+	left: 0;
+	right: auto;
+}
+.js #hero .carousel-nav .next a, 
+.js #hero .carousel-nav .prev a {
+  display: block;
+}
+.hero-carousel-nav li a {
+	color: #fff;
+	border: none;
+	outline: none;
+	display: block;
+	float: left;
+	padding: 5px 20px;
+	
+}
+
+.hero-carousel-nav li a:hover { 
+	background: #89051C;
+}
+
+.hero-carousel-nav li a:active,
+.hero-carousel-nav li a:focus { 
+	border: none;
+	outline: none;
+}

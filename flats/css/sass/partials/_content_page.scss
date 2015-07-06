@@ -1,0 +1,55 @@
+// ESN 
+// ESN Thanks STYLES
+// PARTIALS/_thanks.SCSS
+
+.content_page section.hero_banner .hero_banner_content {
+	width: auto;
+	left: 2%;
+} 
+.generic_content_container {
+	overflow: hidden;
+	padding: 0 2%;
+}
+.content_page .content_copy {
+	float: left;
+	margin-right: 2%;
+	width: 70%;
+}
+.content_page .content_copy .content_share {
+	padding: 20px 0;
+	margin: 35px 0;
+	width: 75%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.content_page .comments {
+	margin: 35px 0;
+}
+
+.content_page aside {
+	float: left;
+	width: 28%;
+}
+.content_page aside.content_sidebar .related_article {
+	margin: 0 0 35px;
+}
+.content_page aside.content_sidebar .related_article a {
+	color: black;
+}
+.content_page aside.content_sidebar .related_article .related_article_copy {
+	padding: 20px;
+}
+.content_page aside.content_sidebar .related_article .related_article_copy h5 {
+	font-size: 20px;
+	margin-top: 0;
+}
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+
+}

@@ -1,0 +1,53 @@
+// ESN
+// BLOCK STYLING
+// PARTIALS/_BLOCK_GRID.SCSS
+
+section.block_grid {
+
+}
+section.block_grid .block {
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+section.block_grid .block img {
+	width: 100%;
+}
+
+.two_blocks {
+	width: 47%;
+	margin-right: 5%;
+}
+section.block_grid .block:nth-child(2),
+section.block_grid .block:nth-child(5),
+section.block_grid .block:nth-child(6), 
+section.block_grid .block:nth-child(8),
+section.block_grid .block:nth-child(10),
+section.block_grid .block:nth-child(12),
+section.block_grid .block:nth-child(14),
+section.block_grid .block:nth-child(16),
+section.block_grid .block:nth-child(18),
+section.block_grid .block:nth-child(20),
+section.block_grid .block:nth-child(22),
+section.block_grid .block:nth-child(24),
+section.block_grid .block:nth-child(26),
+section.block_grid .block:nth-child(28) {
+	margin-right: 0;
+}
+
+// TABLET STYLES
+@include respond-to(tablet) {
+
+}
+
+// MOBILE SYLES
+@include respond-to(mobile) {
+	section.block_grid .block {
+		float: none;
+	}
+	.two_blocks {
+		width: 100%;
+		margin-right: 0%;
+		margin-top: 10px;
+	}
+}
